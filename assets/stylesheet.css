@@ -1,0 +1,150 @@
+/* Resetting margin/padding + border box */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* body width and height set to 100% of viewport*/
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: white
+}
+
+/* Setting grid container to display grid and setting column width*/
+.grid{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+/*----------------------------*/
+/* Sidebar Section CSS Code*/
+/*----------------------------*/
+
+.sidebar{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 1.7fr 1.3fr 0.5fr 0.5fr;
+}
+
+.sidebar h2{
+    font-size: 2vw;
+}
+
+/* 'Logo' div container */
+.logo{
+    padding-top: 5%;
+    padding-left: 5%;
+}
+
+.logo img{
+    width: 40%;
+    height: auto;
+}
+
+/* 'Work' div container */
+
+.work{
+    padding-top: 5%;
+    padding-left: 5%;
+}
+
+.work h2{
+    color: #3ce5d0;
+}
+
+.work ul{
+    padding-top: 1%;
+}
+
+/* list decoration removed */
+.work li{
+    list-style: none;
+    font-size: 1.7vw;
+    color: #0040ff;
+}
+
+/* text decoration removed */
+.work a{
+    color: inherit;
+    text-decoration: none;
+}
+
+/* 'Info' div container - padding added */
+.info{
+    padding-top: 5%;
+    padding-left: 5%;
+    color: #3ce5d0;
+}
+
+/* 'More' div container - padding added*/
+.more{
+    padding-top: 5%;
+    padding-left: 5%;
+    color: #3ce5d0;
+}
+
+/*----------------------------*/
+/* Content Section CSS Code*/
+/*----------------------------*/
+
+.content{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 1.5fr;
+}
+
+.hero-text{
+    color: #0040ff;
+}
+
+#hero-main, #offset{
+    display: inline;
+    margin: 0;
+    padding: 0;
+    font-size: 3vw;
+}
+
+#offset{
+    opacity: 0;
+}
+
+.vimeo{
+    
+}
+
+/*----------------------------*/
+/* Media Queries*/
+/*----------------------------*/
+
+@media screen and (max-width:800px){
+    .sidebar{
+        display: none;
+    }
+
+    .content{
+        width: 100vw;
+        height: 100vh;
+    }
+
+    #hero-main, #offset{
+        margin: 0;
+        padding: 0;
+        font-size: 5vw;
+    }
+
+}
+
+@media screen and (max-width:500px){
+
+    #hero-main, #offset{
+        margin: 0;
+        padding: 0;
+        font-size: 6vw;
+    }
+
+}
