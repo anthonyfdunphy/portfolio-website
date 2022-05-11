@@ -157,6 +157,26 @@ body{
     background-size: cover;
 }
 
+/* image background for link1 [Tebi-Rex]*/
+
+.image-banner-link1{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-image: url(/assets/tebi-rex-hero.jpeg);
+    background-size: cover;
+}
+
+/* image background for link1 [Super-Silly]*/
+
+.image-banner-link2{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-image: url(/assets/super-silly-hero.jpeg);
+    background-size: cover;
+}
+
 .work-text{
     display: grid;
     grid-template-columns: 1fr 1fr;
