@@ -1,3 +1,8 @@
+@font-face {
+    font-family: "Big Caslon";
+    src: url(/fonts/BigCaslon\ Regular.otf);
+}
+
 /* Resetting margin/padding + border box */
 *{
     margin: 0;
@@ -9,6 +14,7 @@
 body{
     width: 100vw;
     height: 100vh;
+    font-family: "Big Caslon", sans-serif;
 }
 
 /* Setting grid container to display grid and setting column width*/
@@ -122,7 +128,14 @@ body{
 }
 
 .vimeo{
-    
+    position: relative;
+    width: 100%;
+    background-color: #3ce5d0;
+}
+
+video{
+    background-color: #0040ff;
+    width: 100%;
 }
 
 /*-------------------------------*/
