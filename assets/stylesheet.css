@@ -181,7 +181,6 @@ body{
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding: 1%;
-    background-color: pink;
 }
 
 .work-text #credits{
