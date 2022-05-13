@@ -180,9 +180,12 @@ body{
 .work-text{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    padding: 1%;
+    background-color: pink;
 }
 
 .work-text #credits{
+    padding: 0.5%;
     color: #0040ff;
     font-size: 1.5vw;
 }
