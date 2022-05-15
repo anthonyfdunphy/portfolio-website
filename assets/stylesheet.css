@@ -38,6 +38,7 @@ body{
 
 .sidebar h2{
     font-size: 2vw;
+    font-weight: normal;
 }
 
 /* 'Logo' div container */
@@ -108,6 +109,7 @@ body{
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 0.5fr 1.5fr;
+    overflow-x: hidden;
 }
 
 .hero-text{
@@ -128,15 +130,13 @@ body{
 }
 
 .vimeo{
-    position: relative;
+    /*position: relative;*/
+    padding: 0;
+    margin: 0;
     width: 100%;
-    background-color: #3ce5d0;
 }
 
-video{
-    background-color: #0040ff;
-    width: 100%;
-}
+
 
 /*-------------------------------*/
 /* Previous Work Section CSS Code*/
