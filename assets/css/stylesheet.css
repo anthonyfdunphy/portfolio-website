@@ -106,6 +106,12 @@ body{
     color: #3ce5d0;
 }
 
+.more a{
+    color: inherit;
+    text-decoration: none;
+}
+
+
 /*----------------------------*/
 /* Content Section CSS Code*/
 /*----------------------------*/
@@ -214,10 +220,6 @@ body{
     background-image: url(/assets/word-up-banner.jpg);
 }
 
-/* image background for about section*/
-.about-banner{
-    background-image: url(/assets/about-banner.jpg);
-}
 
 .work-text{
     display: grid;
@@ -230,6 +232,28 @@ body{
     padding: 0.5%;
     color: #0040ff;
     font-size: 1.5vw;
+}
+
+/* image background for about section*/
+.about-banner{
+    background-image: url(/assets/about-banner.jpg);
+}
+
+.about-text{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+    padding: 1% 1% 1% 0px;
+}
+
+.about-text #credits{
+    padding: 0.5%;
+    color: #0040ff;
+    font-size: 1.5vw;
+}
+
+.about-text p{
+    padding-top: 2%;
 }
 
 /*-------------------------------*/
