@@ -1,5 +1,6 @@
-var colors;
-colors = ['white', 'black', 'custom'];
-
-var el = document.getElementById('colors');
-el.textContent = colors[2];
+var msg = 'Sign up to to recieve 10 pc off!';
+function updateMessage() {
+    var el = document.getElementById('message');
+    el.textContent = msg;
+}
+updateMessage();
