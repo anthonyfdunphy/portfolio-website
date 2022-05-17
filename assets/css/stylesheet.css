@@ -276,17 +276,51 @@ body{
     width: 100%;
     height: 100%;
     display: grid;
-    grid-template-rows: 0.1fr 1fr;
+    grid-template-rows: 0.1fr 0.5fr 0.25fr 0.25fr;
     /*grid-template-rows: 1.7fr 1.3fr 0.5fr 0.5fr;*/
-    background-color: aqua;
 }
 
 .mob-text{
     display: flex;
     align-items: center;
     font-size: 12vw;
-    background-color: red;
+    color: #3ce5d0;
+    background-color: white;
 }
+
+.mob-projects{
+    background-color: white;
+}
+
+.mob-projects h1{
+    font-weight: normal;
+    font-size: 12vw;
+    color: #3ce5d0;
+}
+
+.mob-projects a{
+    color: inherit;
+    text-decoration: none;
+}
+
+.mob-projects li{
+    font-size: 9vw;
+    color: #0040ff;
+}
+
+.mob-info h1{
+    font-weight: normal;
+    font-size: 12vw;
+    color: #3ce5d0;
+}
+
+.mob-more h1{
+    font-weight: normal;
+    font-size: 12vw;
+    color: #3ce5d0;
+}
+
+
 
 /*-------------------------------*/
 /* Media Queries*/
