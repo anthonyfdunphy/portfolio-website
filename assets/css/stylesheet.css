@@ -308,16 +308,15 @@ body{
     color: #0040ff;
 }
 
-.mob-info h1{
+.mob-heading h1{
     font-weight: normal;
     font-size: 12vw;
     color: #3ce5d0;
 }
 
-.mob-more h1{
-    font-weight: normal;
-    font-size: 12vw;
-    color: #3ce5d0;
+.mob-heading a{
+    color: inherit;
+    text-decoration: none;
 }
 
 
