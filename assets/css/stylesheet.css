@@ -1,6 +1,6 @@
 @font-face {
     font-family: "Big Caslon";
-    src: url(/fonts/BigCaslon\ Regular.otf);
+    src: url(/fonts/BigCaslon\ Regular.otf) format('opentype');
 }
 
 /* Resetting margin/padding + border box */
