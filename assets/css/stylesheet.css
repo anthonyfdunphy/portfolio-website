@@ -203,7 +203,7 @@ body{
     padding: 0;
     width: 100%;
     height: auto;
-    background-image: url(assets/link0_work.png);
+    background-image: url('assets/link0_work.png');
     background-size: contain;
     background-repeat: no-repeat;
 }
@@ -216,7 +216,7 @@ body{
 
 /* image background for link2 [Super-Silly]*/
 .link2{
-    background-image: url(assets/super-silly-hero.jpeg);
+    background-image: url('assets/super-silly-hero.jpeg');
 }
 
 /* image background for link3 [Yamamori]*/
