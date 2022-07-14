@@ -203,7 +203,7 @@ body{
     padding: 0;
     width: 100%;
     height: auto;
-    background-image: url(/assets/link0_work.png);
+    background-image: url(assets/link0_work.png);
     background-size: contain;
     background-repeat: no-repeat;
 }
@@ -211,32 +211,32 @@ body{
 /* image background for link1 [Tebi-Rex]*/
 .link1{
     justify-content: center;
-    background-image: url(/assets/tebi-rex-hero.jpeg);
+    background-image: url(assets/tebi-rex-hero.jpeg);
 }
 
 /* image background for link2 [Super-Silly]*/
 .link2{
-    background-image: url(/assets/super-silly-hero.jpeg);
+    background-image: url(assets/super-silly-hero.jpeg);
 }
 
 /* image background for link3 [Yamamori]*/
 .link3{
-    background-image: url(/assets/yamamori-hero.jpg);
+    background-image: url(assets/yamamori-hero.jpg);
 }
 
 /* image background for link3 background image 1 [Yamamori]*/
 .link31{
-    background-image: url(/assets/yamamori-bg-1.jpg);
+    background-image: url(assets/yamamori-bg-1.jpg);
 }
 
 /* image background for link3 background image 2 [Yamamori]*/
 .link32{
-    background-image: url(/assets/yamamori-bg-2.jpg);
+    background-image: url(assets/yamamori-bg-2.jpg);
 }
 
 /* image background for link3 [Word-Up Collective]*/
 .link4{
-    background-image: url(/assets/word-up-banner.jpg);
+    background-image: url(assets/word-up-banner.jpg);
 }
 
 
