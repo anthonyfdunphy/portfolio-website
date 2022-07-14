@@ -1,5 +1,5 @@
 # Anthony Dunphy Portfolio Website
-Build of porfolio website with responsive design. The live version of the site can be found here.
+Build of porfolio website with responsive design. The live version of the site can be found [here](https://anthonyfdunphy.github.io/portfolio-website/).
 
 ![](assets/responsive_page.PNG)
 
