@@ -58,7 +58,18 @@ body{
 .logo img{
     width: 40%;
     height: auto;
+    /* border-bottom-left-radius: 70%;
+    border-bottom-right-radius: 70%;
+    border-top-left-radius: 70%;
+    border-top-right-radius: 70%; */
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 1px, rgb(60,229,208) 0px 0px 0px 2px;
+    transition: .3s;
 }
+
+.logo img:hover {
+    box-shadow: 4px 4px #0040ff;
+    transition: .3s;
+  }
 
 /* turn mouse into hover over logo */
 
