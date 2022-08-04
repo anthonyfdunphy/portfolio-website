@@ -211,7 +211,7 @@ body{
 /* image background for link1 [Tebi-Rex]*/
 .link1{
     justify-content: center;
-    background-image: url('assets/tebi-rex-hero.jpeg');
+    background-image: url('/assets/tebi-rex-hero.jpeg');
 }
 
 /* image background for link2 [Super-Silly]*/
