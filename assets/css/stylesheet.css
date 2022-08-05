@@ -256,7 +256,7 @@ body{
     padding: 0;
     width: 100%;
     height: auto;
-    background-image: url('/assets/link0_work.png');
+    background-image: url('/assets/img/link0_work.png');
     background-size: contain;
     background-repeat: no-repeat;
 }
@@ -264,7 +264,7 @@ body{
 /* image background for link1 [Tebi-Rex]*/
 .link1{
     justify-content: center;
-    background-image: url('/assets/tebi-rex-hero.jpeg');
+    background-image: url('/assets/img/tebi-rex-hero.jpeg');
 }
 
 /* image background for link2 [Super-Silly]*/
