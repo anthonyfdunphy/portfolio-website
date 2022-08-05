@@ -274,7 +274,7 @@ body{
 
 /* image background for link3 [Yamamori]*/
 .link3{
-    background-image: url(/assets/yamamori-hero.jpg);
+    background-image: url("/assets/img/yamamori-hero.jpg");
 }
 
 /* image background for link3 background image 1 [Yamamori]*/
