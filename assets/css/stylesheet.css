@@ -105,7 +105,7 @@ body{
     color: #0040ff;
 }
 
-/* text decoration removed */
+/* text decoration removed and hover animation added */
 .work a{
     display:inline-block;
     color: inherit;
@@ -370,6 +370,11 @@ body{
     background-color: white;
 }
 
+.mob-text a{
+    color: inherit;
+    color: #0040ff;
+}
+
 .mob-projects{
     background-color: white;
 }
@@ -461,70 +466,6 @@ body{
     }
     
 
-}
-
-@media screen and (max-width:500px){
-
-    #hero-main, #offset{
-        margin: 0;
-        padding: 0;
-        font-size: 8vw;
-    }
-
-    .content{
-        padding-top: 5%;
-        padding-bottom: 5%;
-        grid-template-rows: 0.7fr 1.3fr;
-    }
-
-    .header h1{
-        font-size: 8vw;
-    }
-
-    .previous_work{
-        width: 100vw;
-        height: 100vh;
-        grid-template-rows: 100px 0.8fr 350px;
-    }
-
-    .previous_work p{
-        font-size: 3.7vw;
-    }
-
-    
-
-}
-
-/* iPhone XR Media Query */
-
-@media screen and (max-width:390px){
-
-    #hero-main, #offset{
-        margin: 0;
-        padding: 0;
-        font-size: 10vw;
-    }
-
-    .content{
-        padding-top: 5%;
-        padding-bottom: 5%;
-        grid-template-rows: 0.7fr 1fr;
-    }
-
-    .previous_work{
-        width: 100vw;
-        height: 100vh;
-        grid-template-rows: 100px 0.7fr 350px;
-    }
-
-    .previous_work p{
-        font-size: 3.7vw;
-    }
-
-    .image-banner{
-        padding-bottom: 10px;
-    }
-
     /* + Plus Menu Button */
 
     .menu-btn{
@@ -558,6 +499,69 @@ body{
     .rot{
         transform: rotate(90deg);
     }
+
+}
+
+@media screen and (max-width:500px){
+
+    #hero-main, #offset{
+        margin: 0;
+        padding: 0;
+        font-size: 8vw;
+    }
+
+    .content{
+        padding-top: 5%;
+        padding-bottom: 5%;
+        grid-template-rows: 0.7fr 1.3fr;
+    }
+
+    .header h1{
+        font-size: 8vw;
+    }
+
+    .previous_work{
+        width: 100vw;
+        height: 100vh;
+        grid-template-rows: 100px 0.8fr 350px;
+    }
+
+    .previous_work p{
+        font-size: 3.7vw;
+    }
+
+}
+
+/* iPhone XR Media Query */
+
+@media screen and (max-width:390px){
+
+    #hero-main, #offset{
+        margin: 0;
+        padding: 0;
+        font-size: 10vw;
+    }
+
+    .content{
+        padding-top: 5%;
+        padding-bottom: 5%;
+        grid-template-rows: 0.7fr 1fr;
+    }
+
+    .previous_work{
+        width: 100vw;
+        height: 100vh;
+        grid-template-rows: 100px 0.7fr 350px;
+    }
+
+    .previous_work p{
+        font-size: 3.7vw;
+    }
+
+    .image-banner{
+        padding-bottom: 10px;
+    }
+
 
 
 }
