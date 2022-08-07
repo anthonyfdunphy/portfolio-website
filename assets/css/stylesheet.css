@@ -25,6 +25,11 @@ body{
     grid-template-columns: 1fr 2fr;
 }
 
+/* Removing iframe border */
+iframe{
+    border: none;
+}
+
 /* Setting grid container to display grid and changing template for error page to fill full width of page*/
 .grid-error{
     width: 100%;
