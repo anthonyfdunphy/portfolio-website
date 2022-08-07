@@ -24,14 +24,8 @@ The aim of this website was to showcase previous project aswell as showcasing my
 
 ![color-scheme](https://i.imgur.com/woJOqYV.png)
 
-Body colour: White
-Content Heading color: #0040ff
-Sidebar Heading colour: #3ce5d0
-
 #### Typography
 The primary font used throughout this site was Big Caslon
 ![big-caslon](https://media.fontsgeek.com/generated/b/i/bigcaslon-regular-sample.png)
 
-Imagery
-Images were saved in an assets folder and linked to from the CSS stylesheet.
 
