@@ -58,10 +58,6 @@ body{
 .logo img{
     width: 40%;
     height: auto;
-    /* border-bottom-left-radius: 70%;
-    border-bottom-right-radius: 70%;
-    border-top-left-radius: 70%;
-    border-top-right-radius: 70%; */
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 1px, rgb(60,229,208) 0px 0px 0px 2px;
     transition: .3s;
 }
@@ -72,7 +68,6 @@ body{
   }
 
 /* turn mouse into hover over logo */
-
 .logo img:hover{
     cursor: pointer;
 }
@@ -222,7 +217,6 @@ body{
 /*-------------------------------*/
 /* Previous Work CSS Code*/
 /*-------------------------------*/
-
 .previous_work{
     display: grid;
     grid-template-rows: 100px 1fr 350px;
@@ -256,7 +250,7 @@ body{
     padding: 0;
     width: 100%;
     height: auto;
-    background-image: url('/assets/img/link0_work.png');
+    background-image: url(../img/link0_work.png);
     background-size: contain;
     background-repeat: no-repeat;
 }
@@ -264,7 +258,7 @@ body{
 /* image background for link1 [Tebi-Rex]*/
 .link1{
     justify-content: center;
-    background-image: url('/assets/img/tebi-rex-hero.jpeg');
+    background-image: url(../img/tebi-rex-hero.jpeg);
 }
 
 /* image background for link2 [Super-Silly]*/
