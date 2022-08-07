@@ -1,7 +1,13 @@
 # Anthony Dunphy Portfolio Website
-Build of porfolio website with responsive design. The live version of the site can be found [here](https://anthonyfdunphy.github.io/portfolio-website/).
+This is a portfolio website build as part of my studying with UCD/Code Institute. The website showcases my work to date along with some sample photographs and videos of projects I have worked on.  The live version of the site can be found [here](https://anthonyfdunphy.github.io/portfolio-website/).
 
-![](assets/responsive_page.PNG)
+![snake-game](https://i.imgur.com/RqmBJGD.png)
+
+## Features
+
+-Sidebar Area
+
+-Content Area
 
 ## Technologies
 
@@ -13,6 +19,8 @@ Build of porfolio website with responsive design. The live version of the site c
 # UX Design
 
 The aim of this website was to showcase previous project aswell as showcasing my HTML, CSS & JavaScript skillset. The site design is comprised of a sidebar and content section which remains constant between all webpages. A CSS grid was implemented which was made responsive through the use of media queries for each device screen.
+
+[TALK ABOUT HOVER EFFECTS AND ADD GIFS TO THEM]
 
 Colour Scheme
 
