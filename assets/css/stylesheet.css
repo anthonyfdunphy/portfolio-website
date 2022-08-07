@@ -244,7 +244,7 @@ body{
     opacity: 0%;
 }
 
-/* image background css for all image-banner links*/
+/* image background css for all image-banner links - Ireland's Edge */
 .image-banner{
     margin: 0;
     padding: 0;
@@ -253,37 +253,44 @@ body{
     background-image: url(../img/link0_work.png);
     background-size: contain;
     background-repeat: no-repeat;
+    background-position: center;
 }
 
 /* image background for link1 [Tebi-Rex]*/
 .link1{
     justify-content: center;
     background-image: url(../img/tebi-rex-hero.jpeg);
+    background-position: center;
 }
 
 /* image background for link2 [Super-Silly]*/
 .link2{
     background-image: url(../img/super-silly-hero.jpeg);
+    background-position: center;
 }
 
 /* image background for link3 [Yamamori]*/
 .link3{
     background-image: url(../img/yamamori-hero.jpg);
+    background-position: center;
 }
 
 /* image background for link3 background image 1 [Yamamori]*/
 .link31{
     background-image: url(../img/yamamori-bg-1.jpg);
+    background-position: center;
 }
 
 /* image background for link3 background image 2 [Yamamori]*/
 .link32{
     background-image: url(../img/yamamori-bg-2.jpg);
+    background-position: center;
 }
 
 /* image background for link3 [Word-Up Collective]*/
 .link4{
     background-image: url(../img/word-up-banner.jpg);
+    background-position: center;
 }
 
 
@@ -446,6 +453,10 @@ body{
 /*-------------------------------*/
 
 @media screen and (max-width:800px){
+    .image-banner{
+        height: 250px;
+
+    }
     .sidebar{
         display: none;
     }
