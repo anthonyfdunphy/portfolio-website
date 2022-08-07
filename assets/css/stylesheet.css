@@ -263,27 +263,27 @@ body{
 
 /* image background for link2 [Super-Silly]*/
 .link2{
-    background-image: url('/assets/super-silly-hero.jpeg');
+    background-image: url(../img/super-silly-hero.jpeg);
 }
 
 /* image background for link3 [Yamamori]*/
 .link3{
-    background-image: url("/assets/img/yamamori-hero.jpg");
+    background-image: url(../img/yamamori-hero.jpg);
 }
 
 /* image background for link3 background image 1 [Yamamori]*/
 .link31{
-    background-image: url(/assets/yamamori-bg-1.jpg);
+    background-image: url(../img/yamamori-bg-1.jpg);
 }
 
 /* image background for link3 background image 2 [Yamamori]*/
 .link32{
-    background-image: url(/assets/yamamori-bg-2.jpg);
+    background-image: url(../img/yamamori-bg-2.jpg);
 }
 
 /* image background for link3 [Word-Up Collective]*/
 .link4{
-    background-image: url(/assets/word-up-banner.jpg);
+    background-image: url(../img/word-up-banner.jpg);
 }
 
 
@@ -317,7 +317,7 @@ body{
 
 /* image background for about section*/
 .about-banner{
-    background-image: url(assets/about-banner.jpg);
+    background-image: url(../img/about-banner.jpg);
 }
 
 .about-text{
