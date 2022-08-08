@@ -31,7 +31,13 @@ The primary font used throughout this site was Big Caslon
 ## Testing
 
 #### HTML Validator results
-HERE
+One of the main warning I recieved when submitting my HTML code for validation was the warning that there was no h2-h6 element in the section element as shown here:
+![warning](https://i.imgur.com/KJLeSBW.png)
+
+As a result, I changed these section tags to div elements and it cleared all warnings or errors. Below is a screenshot of the index page, all other pages passed with no errors or warnings.
+##### Index
+![index](https://i.imgur.com/3mQX6GK.png)
+
 
 #### Lighthouse Results
 ![lighthouse-results](https://i.imgur.com/L7QBxbh.png)
@@ -50,4 +56,4 @@ I depolyed this page using Github pages. I used the following steps to deploy:.
 The live link can be found [here](https://anthonyfdunphy.github.io/portfolio-website/).
 
 ## Credits
-I would like to thank my mentor for all the help during this process to troubleshoot any CSS issues which had arisen during the creation of this site.
+I would like to thank my mentor Spencer Barriball for all the help during this process to troubleshoot any CSS issues which had arisen during the creation of this site.
