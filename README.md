@@ -28,4 +28,23 @@ The aim of this website was to showcase previous project aswell as showcasing my
 The primary font used throughout this site was Big Caslon
 ![big-caslon](https://media.fontsgeek.com/generated/b/i/bigcaslon-regular-sample.png)
 
+## Testing
 
+#### HTML Validator results
+HERE
+
+#### Lighthouse Results
+![lighthouse-results](https://i.imgur.com/L7QBxbh.png)
+
+#### CSS Validator Results
+![css](https://i.imgur.com/UUDvKmg.png)
+
+## Deployment
+I depolyed this page using Github pages. I used the following steps to deploy:.
+
+- Navigate to the 'Settings' tab in the GitHub repository.
+- Select 'Pages' from the menu on the left hand side.
+- From the source section drop-down menu, select the main branch
+- Once selected,the page will be automatically refreshed and the user will be given an indication that deploment was successful.
+
+The live link can be found [here](https://anthonyfdunphy.github.io/portfolio-website/).
