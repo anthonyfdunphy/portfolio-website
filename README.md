@@ -1,5 +1,5 @@
 # Anthony Dunphy Portfolio Website
-This is a portfolio website build as part of my studying with UCD/Code Institute. The website showcases my work to date along with some sample photographs and videos of projects I have worked on.  The live version of the site can be found [here](https://anthonyfdunphy.github.io/portfolio-website/).
+This is a portfolio website build as part of my studying with UCD/Code Institute. The website showcases my work to date along with some sample photographs and videos of projects I have worked on. The aim was to create a miminalist site design which would aid readability and site loading speeds. The live version of the site can be found [here](https://anthonyfdunphy.github.io/portfolio-website/).
 
 ![portfolio-website](https://i.imgur.com/RqmBJGD.png)
 
