@@ -48,3 +48,6 @@ I depolyed this page using Github pages. I used the following steps to deploy:.
 - Once selected,the page will be automatically refreshed and the user will be given an indication that deploment was successful.
 
 The live link can be found [here](https://anthonyfdunphy.github.io/portfolio-website/).
+
+## Credits
+I would like to thank my mentor for all the help during this process to troubleshoot any CSS issues which had arisen during the creation of this site.
