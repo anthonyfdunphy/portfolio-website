@@ -513,6 +513,10 @@ iframe{
         width: 100%;
         height: 100%;
     }
+    
+    .menu-btn input{
+        all: unset;
+    }
 
     .plus{
         position: absolute;
