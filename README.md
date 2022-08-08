@@ -48,6 +48,7 @@ As a result, I changed these section tags to div elements and it cleared all war
 ## Deployment
 I depolyed this page using Github pages. I used the following steps to deploy:.
 
+- Deploy code using Git e.g. git add . git commit -m"message" git push
 - Navigate to the 'Settings' tab in the GitHub repository.
 - Select 'Pages' from the menu on the left hand side.
 - From the source section drop-down menu, select the main branch
