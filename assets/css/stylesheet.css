@@ -181,7 +181,6 @@ iframe{
     transform: scaleX(1);
 }
 
-
 /*----------------------------*/
 /* Content CSS Code*/
 /*----------------------------*/
@@ -217,7 +216,6 @@ iframe{
     margin: 0;
     width: 100%;
 }
-
 
 
 /*-------------------------------*/
@@ -427,31 +425,6 @@ iframe{
     position: absolute;
     pointer-events: none !important;
     mix-blend-mode: difference;
-}
-
-
-/*----------------------------*/
-/* 404 Error Code*/
-/*----------------------------*/
-
-.error{
-    background: rgb(255,255,255);
-    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(60,229,208,1) 100%);
-    width: 100%;
-    height: 100%;
-}
-
-.error-text{
-    display: flex;
-    align-items: center;
-    width: 100%;
-    height: 15%;
-    color: #b8fff7;
-    background-color: transparent;
-}
-
-.error h1{
-    font-size: 4vw;
 }
 
 /*-------------------------------*/
