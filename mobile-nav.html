@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,34 +11,33 @@
     <link rel="stylesheet" href="assets/css/stylesheet.css">
     <title>Mobile Nav</title>
 </head>
+
 <body>
     <div class="mob-grid">
         <nav class="mob-nav">
             <div class="mob-text"><a href="index.html">Anthony Dunphy</a></div>
             <div class="mob-projects">
-                <h1>Projects</h1>
+                <h1>work</h1>
                 <ul>
-                    <li><a href="irelands-edge.html">Ireland’s Edge: The Podcast</a></li>
+                    <li><a href="oumuamua.html">OUMUAMUA</a></li>
+                    <li><a href="kunstfest.html">Blutsee—Kunstfest Weimar</a></li>
                     <li><a href="tebi-rex.html">Tebi Rex—Electric Picnic</a></li>
-                    <li><a href="super-silly.html">Super Silly</a></li>
-                    <li><a href="yamamori-tengu.html">Yamamori Tengu</a></li>
-                    <li><a href="wordup.html">WordUp Collective</a></li>
+                    <li><a href="irelands-edge.html">Ireland’s Edge: The Podcast</a></li>
+                    <li><a href="super-silly.html">Super Silly - Button Factory</a></li>
                 </ul>
             </div>
             <div class="mob-heading">
-                <h1><a href="info.html">Info</a></h1>
+                <h1><a href="info.html">info</a></h1>
             </div>
             <div class="mob-heading">
-                <h1><a href="https://www.instagram.com/anthonya_d/">More</a></h1>
+                <h1><a href="https://www.instagram.com/anthonya_d/">more</a></h1>
             </div>
             <div id="menu-btn" class="menu-btn">
-                <a href="#" ></a>
-                <input
-                    action="action"
-                    onclick="window.history.go(-1); return false;"
-                />
-                <div class="plus"></div>
-                <div class="plus rot"></div>
+                <a href="#" id="menu-btn" class="menu-btn" onclick="goBack(); return false;">
+                    <input type="button" value="" class="action-button" />
+                    <div class="plus"></div>
+                    <div class="plus rot"></div>
+                </a>
             </div>
         </nav>
     </div>
@@ -45,4 +45,5 @@
     <script src="assets/js/script.js"></script>
 
 </body>
+
 </html>

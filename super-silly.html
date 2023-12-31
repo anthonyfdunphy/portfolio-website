@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,52 +11,77 @@
     <link rel="stylesheet" href="assets/css/stylesheet.css">
     <title>Super Silly</title>
 </head>
+
 <body>
     <div class="grid">
         <nav class="sidebar">
             <div class="logo">
-                <a href="index.html" ><img src="assets/img/anthony_headshot.JPG" alt="logo"></a>
+                <a href="index.html"><img src="assets/img/anthony_headshot_bw.jpg" alt="logo"></a>
             </div>
             <div class="work">
-                <h2>Work</h2>
+                <h2>work</h2>
                 <ul>
-                    <li><a href="irelands-edge.html">Ireland’s Edge: The Podcast</a></li>
+                    <li><a href="oumuamua.html">OUMUAMUA</a></li>
+                    <li><a href="kunstfest.html">Blutsee—Kunstfest Weimar</a></li>
                     <li><a href="tebi-rex.html">Tebi Rex—Electric Picnic</a></li>
+                    <li><a href="irelands-edge.html">Ireland’s Edge: The Podcast</a></li>
                     <li><a href="super-silly.html">Super Silly - Button Factory</a></li>
-                    <li><a href="yamamori-tengu.html">Yamamori Tengu</a></li>
-                    <li><a href="wordup.html">WordUp Collective</a></li>
                 </ul>
 
             </div>
             <div class="info">
-                <h2><a href="info.html">Info</a></h2>
+                <h2><a href="info.html">info</a></h2>
             </div>
             <div class="more">
-                <h2><a id="instaLink" href="#" onclick="openInstagram();return false;">More</a></h2> 
+                <h2><a id="instaLink" href="#" onclick="openInstagram();return false;">more</a></h2>
             </div>
         </nav>
 
         <div class="previous_work">
-            <div class="header"><h1>Super Silly - Button Factory</h1></div>
+            <div class="header">
+                <h1>Super Silly - Button Factory</h1>
+            </div>
             <div class="menu-btn">
                 <a href="mobile-nav.html"></a>
                 <div class="plus"></div>
                 <div class="plus rot"></div>
             </div>
-            <div class="image-banner link2"></div>
+
+            <div class="image-banner-carousel">
+                <div class="carousel">
+                    <img id="img1" src="https://i.imgur.com/iEifeVb.jpg" alt="Image 1">
+                    <img id="img2" src="https://i.imgur.com/t9GBp1C.jpg" alt="Image 2">
+                    <img id="img3" src="https://i.imgur.com/uQSm1yA.jpg" alt="Image 3">
+                    <!-- Add more images as needed -->
+
+                </div>
+                <div class="button-main">
+                    <button onclick="prevImage()" class="carousel-btn">-</button>
+                    <button onclick="nextImage()" class="carousel-btn">+</button>
+                </div>
+            </div>
+
             <div class="work-text">
                 <div class="credits">
-                    <p>Creative Direction / Scenic Design / 2018</p>
+                    <p>Projection Mapping / Set Design </p>
                     <p>Client: Super Silly, Aiken Promotions</p>
-                    <p>Venue: Button Factory</p>
+                    <p>Venue: Button Factory, Dublin, IE</p>
                     <p id="message"></p>
                 </div>
-                <div class="credits"><p>As part of a continuing collaboration with Super Silly, the band approached us to create the concept design for the Super Silly show in the Button Factory. We explored the possibility of incorporating a vibrant projection mapped visual design. The visual projection piece is compromised of a 5 foot by 2 foot band logo which spanned the length of the stage in the venue. This piece bathes the viewer. The interplay between the stage lighting and the visual design coaxed the audio inside the visual experience.</p></div>
+                <div class="credits">
+                    <p>As part of a continuing collaboration with Super Silly, the band approached me to create the
+                        concept design for the Super Silly show in the Button Factory. We explored the possibility of
+                        incorporating a vibrant projection mapped visual design. The visual projection piece is
+                        compromised of a 5 foot by 2 foot band logo which spanned the length of the stage in the venue.
+                        This piece bathes the viewer. The interplay between the stage lighting and the visual design
+                        coaxed the audio inside the visual experience.</p>
+                </div>
             </div>
         </div>
     </div>
 
-<script src="assets/js/script.js"></script>
-    
+    <script src="assets/js/script.js"></script>
+
 </body>
+
 </html>

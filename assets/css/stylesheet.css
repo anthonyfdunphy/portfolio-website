@@ -1,24 +1,29 @@
+:root {
+    --logo-url: url('assets/img/anthony_headshot_bw.jpg');
+}
+
 @font-face {
     font-family: "Big Caslon";
     src: url(../fonts/BigCaslonRegular.otf);
 }
 
 /* Resetting margin/padding + border box */
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 /* body width and height set to 100% of viewport*/
-body{
+body {
     width: 100vw;
     height: 100vh;
     font-family: "Big Caslon", sans-serif;
+    /*background-color: #DCFF64;*/
 }
 
 /* Setting grid container to display grid and setting column width*/
-.grid{
+.grid {
     width: 100%;
     height: 100%;
     display: grid;
@@ -26,12 +31,12 @@ body{
 }
 
 /* Removing iframe border */
-iframe{
+iframe {
     border: none;
 }
 
 /* Setting grid container to display grid and changing template for error page to fill full width of page*/
-.grid-error{
+.grid-error {
     width: 100%;
     height: 100%;
     display: grid;
@@ -42,97 +47,100 @@ iframe{
 /* Sidebar CSS Code*/
 /*----------------------------*/
 
-.sidebar{
+.sidebar {
     width: 100%;
     height: 100%;
     display: grid;
-    grid-template-rows: 1.7fr 1.3fr 0.5fr 0.5fr;
+    grid-template-rows: 0.5fr 0.4fr 0.1fr 0.6fr;
 }
 
-.sidebar h2{
+.sidebar h2 {
     font-size: 2vw;
     font-weight: normal;
 }
 
 /* 'Logo' div container */
-.logo{
+.logo {
     padding-top: 5%;
     padding-left: 5%;
+    overflow: hidden;
 }
 
-.logo img{
+.logo img {
     width: 40%;
     height: auto;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 1px, rgb(60,229,208) 0px 0px 0px 2px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 1px, rgb(60, 229, 208) 0px 0px 0px 2px;
     transition: .3s;
 }
 
 .logo img:hover {
     box-shadow: 4px 4px #0040ff;
     transition: .3s;
-  }
+}
 
 /* turn mouse into hover over logo */
-.logo img:hover{
+.logo img:hover {
     cursor: pointer;
 }
 
 /* fixed position button for mobile */
-.menu-btn{
+.menu-btn {
     display: none;
 }
 
 
 /* 'Work' div container */
 
-.work{
+.work {
     padding-top: 5%;
     padding-left: 5%;
 }
 
-.work h2{
+.work h2 {
     color: #3ce5d0;
 }
 
-.work ul{
-    padding-top: 1%;
+.work ul {
+    padding-top: 2%;
 }
 
 /* list decoration removed */
-.work li{
+.work li {
     list-style: none;
     font-size: 1.7vw;
     color: #0040ff;
+    padding-top: 1%;
 }
 
 /* text decoration removed and hover animation added */
-.work a{
-    display:inline-block;
+.work a {
+    display: inline-block;
     color: inherit;
     text-decoration: none;
     will-change: transform;
     transition: transform 450ms;
 }
 
-.work a:hover{
+.work a:hover {
     transition: transform 125ms;
-    transform: translateY(-5px);
+    transform: translateY(-3px);
+    box-shadow: 0px 2px 0px 0px #0040ff;
 }
 
 /* 'Info' div container - padding added */
-.info{
+.info {
     padding-top: 5%;
     padding-left: 5%;
     color: #3ce5d0;
 }
 
-.info a{
+.info a {
     position: relative;
     color: inherit;
     text-decoration: none;
 }
 
-.info a::before{
+.info a::before {
     content: "";
     position: absolute;
     display: block;
@@ -146,24 +154,24 @@ iframe{
     transition: transform 0.3s ease;
 }
 
-.info a:hover::before{
+.info a:hover::before {
     transform: scaleX(1);
 }
 
 /* 'More' div container - padding added*/
-.more{
+.more {
     padding-top: 5%;
     padding-left: 5%;
     color: #3ce5d0;
 }
 
-.more a{
+.more a {
     position: relative;
     color: inherit;
     text-decoration: none;
 }
 
-.more a::before{
+.more a::before {
     content: "";
     position: absolute;
     display: block;
@@ -177,7 +185,7 @@ iframe{
     transition: transform 0.3s ease;
 }
 
-.more a:hover::before{
+.more a:hover::before {
     transform: scaleX(1);
 }
 
@@ -185,71 +193,191 @@ iframe{
 /* Content CSS Code*/
 /*----------------------------*/
 
-.content{
+.content {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 0.5fr 1.5fr;
     overflow-x: hidden;
 }
 
-.hero-text{
+.hero-text {
     color: #0040ff;
+    display: flex;
+    justify-content: center;
+    /* Horizontally centers the child elements */
+    align-items: center;
+    /* Vertically centers the child elements */
+    height: 100vh;
 }
 
-#hero-main, #offset{
+#hero-main,
+#offset {
     display: inline;
     margin: 0;
     padding: 0;
-    font-size: 4vw;
-    float: left;
+    font-size: 4.2vw;
 }
 
-#offset{
-    margin:0;
+#offset {
+    margin: 0;
     padding: 0;
     opacity: 0;
 }
 
-.vimeo{
+.vimeo {
     /*position: relative;*/
     padding: 0;
     margin: 0;
     width: 100%;
 }
 
+/* Setting styles for the .vimeo container */
+.vimeo-hrz {
+    position: relative;
+    /* Ensure relative positioning */
+    width: 100%;
+    /* Full width of parent container */
+    height: 900px;
+    /* Full height of parent container */
+}
+
+/* Style the iframe within the .vimeo container */
+.vimeo-hrz iframe {
+    position: absolute;
+    /* Absolute positioning */
+    top: 0;
+    /* Align to the top */
+    left: 0;
+    /* Align to the left */
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    border: none;
+    /* Remove any default borders */
+}
 
 /*-------------------------------*/
 /* Previous Work CSS Code*/
 /*-------------------------------*/
-.previous_work{
+.previous_work {
     display: grid;
     grid-template-rows: 100px 1fr 350px;
     overflow: scroll;
     overflow-x: hidden;
-    
+
 }
 
-.header{
+.header {
     display: flex;
     align-items: center;
 
 }
 
-.header h1{
+.header h1 {
     margin: 0;
     padding: 0;
     font-size: 3.5vw;
     color: #0040ff;
 }
 
-#offset_column{
+#offset_column {
     display: inline-block;
     width: 10%;
     opacity: 0%;
 }
 
+.image-banner-carousel {
+    width: 55%;
+    height: auto;
+    /* Adjust as needed */
+    overflow: hidden;
+    margin-left: 20%;
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel img {
+    width: 100%;
+    height: auto;
+}
+
+.carousel-btn {
+    background-color: blue;
+    /* Set the background color to blue */
+    color: white;
+    /* Set the text color to white for better visibility */
+    border: none;
+    /* Remove default button border */
+    font-size: 24px;
+    /* Adjust font size as needed */
+    width: 40px;
+    /* Set width */
+    height: 40px;
+    /* Set height */
+    border-radius: 50%;
+    /* To make it a circle */
+    cursor: pointer;
+    /* Add a pointer cursor on hover */
+    outline: none;
+    /* Remove outline */
+    transition: background-color 0.3s;
+    /* Smooth transition for hover effect */
+    margin-top: 1%;
+}
+
+/* CSS For OUMUAMUA carousel images*/
+.carousel-oum {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-oum #img1 {
+    width: 60%;
+    height: auto;
+}
+
+.carousel-oum #img2 {
+    width: 53.5%;
+    height: auto;
+    object-fit: contain;
+}
+
+.carousel-oum #img3 {
+    width: 71.25%;
+    height: auto;
+    object-fit: contain;
+}
+
+.carousel-btn {
+    background-color: blue;
+    /* Set the background color to blue */
+    color: white;
+    /* Set the text color to white for better visibility */
+    border: none;
+    /* Remove default button border */
+    font-size: 24px;
+    /* Adjust font size as needed */
+    width: 40px;
+    /* Set width */
+    height: 40px;
+    /* Set height */
+    border-radius: 50%;
+    /* To make it a circle */
+    cursor: pointer;
+    /* Add a pointer cursor on hover */
+    outline: none;
+    /* Remove outline */
+    transition: background-color 0.3s;
+    /* Smooth transition for hover effect */
+    margin-top: 1%;
+}
+
 /* image background css for all image-banner links - Ireland's Edge */
-.image-banner{
+.image-banner {
     margin: 0;
     padding: 0;
     width: 100%;
@@ -261,64 +389,123 @@ iframe{
 }
 
 /* image background for link1 [Tebi-Rex]*/
-.link1{
+.link1 {
     justify-content: center;
     background-image: url(../img/tebi-rex-hero.jpeg);
     background-position: center;
 }
 
 /* image background for link2 [Super-Silly]*/
-.link2{
+.link2 {
     background-image: url(../img/super-silly-hero.jpeg);
     background-position: center;
 }
 
 /* image background for link3 [Yamamori]*/
-.link3{
+.link3 {
     background-image: url(../img/yamamori-hero.jpg);
     background-position: center;
 }
 
 /* image background for link3 background image 1 [Yamamori]*/
-.link31{
+.link31 {
     background-image: url(../img/yamamori-bg-1.jpg);
     background-position: center;
 }
 
 /* image background for link3 background image 2 [Yamamori]*/
-.link32{
+.link32 {
     background-image: url(../img/yamamori-bg-2.jpg);
     background-position: center;
 }
 
 /* image background for link3 [Word-Up Collective]*/
-.link4{
+.link4 {
     background-image: url(../img/word-up-banner.jpg);
     background-position: center;
 }
 
+.link5 {
+    background-image: url(../img/OUMUAMUA_bg_1.jpeg);
+    background-position: center;
+}
 
-.work-text{
+.insta-banner {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* Adjust the number based on your grid preference */
+    gap: 10px;
+    /* Space between videos */
+    padding-bottom: 2%;
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    /* Maintain aspect ratio for the video (16:9) */
+}
+
+.video-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.work-text {
     display: grid;
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
-    padding: 1% 1% 1% 0px;
+    padding: 1% 2% 1% 0px;
 }
 
-.work-text .credits{
+.work-text .credits {
     padding: 0.5%;
     color: #0040ff;
     font-size: 1.5vw;
+    text-align: justify;
+    text-justify: inter-word;
 }
 
-#work-image-grid{
+#work-image-grid {
     max-width: 100%;
     height: auto;
     padding-right: 5%;
     padding-top: 2%;
 }
 
-#work-image-grid-span{
+#work-image-grid-span {
+    grid-column: 1/3;
+    max-width: 100%;
+    height: auto;
+    padding-right: 5%;
+    padding-top: 2%;
+}
+
+.work-text-hrz {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+    padding: 1% 2% 1% 0px;
+}
+
+.work-text-hrz .credits {
+    padding: 0.5%;
+    color: #0040ff;
+    font-size: 1.5vw;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+#work-image-grid {
+    max-width: 100%;
+    height: auto;
+    padding-right: 5%;
+    padding-top: 2%;
+}
+
+#work-image-grid-span {
     grid-column: 1/3;
     max-width: 100%;
     height: auto;
@@ -327,39 +514,45 @@ iframe{
 }
 
 /* image background for about section*/
-.about-banner{
+.about-banner {
     background-image: url(../img/about-banner.jpg);
 }
 
-.about-text{
+.about-text {
     display: grid;
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr;
     padding: 1% 1% 1% 0px;
 }
 
-.about-text .credits{
+.about-text .credits {
+    width: 50%;
     padding: 0.5%;
     color: #0040ff;
     font-size: 1.5vw;
+    text-align: justify;
+    text-justify: inter-word;
 }
 
-.about-text p{
+
+.about-text p {
     padding-top: 2%;
 }
+
+
 
 /*----------------------------*/
 /* Mobile-Nav CSS Code*/
 /*----------------------------*/
 
-.mob-grid{
+.mob-grid {
     display: grid;
     width: 100%;
     height: 100%;
 
 }
 
-.mob-nav{
+.mob-nav {
     width: 100%;
     height: 100%;
     display: grid;
@@ -367,7 +560,7 @@ iframe{
     /*grid-template-rows: 1.7fr 1.3fr 0.5fr 0.5fr;*/
 }
 
-.mob-text{
+.mob-text {
     display: flex;
     align-items: center;
     font-size: 12vw;
@@ -375,38 +568,40 @@ iframe{
     background-color: white;
 }
 
-.mob-text a{
+.mob-text a {
     color: inherit;
     color: #0040ff;
 }
 
-.mob-projects{
+.mob-projects {
     background-color: white;
 }
 
-.mob-projects h1{
+.mob-projects h1 {
     font-weight: normal;
     font-size: 12vw;
     color: #3ce5d0;
 }
 
-.mob-projects a{
+.mob-projects a {
     color: inherit;
     text-decoration: none;
 }
 
-.mob-projects li{
+.mob-projects li {
     font-size: 9vw;
     color: #0040ff;
+    margin-bottom: 3%;
+    margin-top: 3%;
 }
 
-.mob-heading h1{
+.mob-heading h1 {
     font-weight: normal;
     font-size: 12vw;
     color: #3ce5d0;
 }
 
-.mob-heading a{
+.mob-heading a {
     color: inherit;
     text-decoration: none;
 }
@@ -431,67 +626,97 @@ iframe{
 /* Media Queries*/
 /*-------------------------------*/
 
-@media screen and (max-width:800px){
-    .image-banner{
+@media (min-width: 1201px) {
+
+    /* Styles specific to extra large devices (large desktops and TVs) */
+    body {}
+
+    .logo img {
+        height: auto;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 1px, rgb(60, 229, 208) 0px 0px 0px 2px;
+        transition: .3s;
+    }
+
+    .vimeo-hrz {
+        position: relative;
+        width: 100%;
+        height: 838px;
+    }
+
+}
+
+
+@media screen and (max-width:768px) {
+    .image-banner {
         height: 250px;
 
     }
-    .sidebar{
+
+    .sidebar {
         display: none;
     }
 
-    .content{
+    .content {
         width: 100vw;
         height: 100vh;
     }
 
-    #hero-main, #offset{
+    #hero-main,
+    #offset {
         margin: 0;
         padding: 0;
         font-size: 6vw;
     }
 
-    .previous_work{
+    .previous_work {
         width: 100vw;
         height: 100vh;
         grid-template-rows: 100px 1fr 350px;
     }
 
-    .header h1{
+    .header h1 {
         font-size: 8vw;
     }
 
-    .previous_work p{
+    .previous_work p {
         font-size: 2.5vw;
     }
-    
+
+    .image-banner-carousel {
+        width: 70%;
+        height: auto;
+        /* Adjust as needed */
+        overflow: hidden;
+        margin-left: 15%;
+    }
+
 
     /* + Plus Menu Button */
 
-    .menu-btn{
+    .menu-btn {
         display: flex;
-        position:absolute;
-        top:0;
-        right:0;
+        position: absolute;
+        top: 0;
+        right: 0;
         width: 50px;
         height: 50px;
     }
 
     /* Hover added for menu-button */
-    .menu-btn:hover{
+    .menu-btn:hover {
         cursor: pointer;
     }
 
-    .menu-btn a{
+    .menu-btn a {
         width: 100%;
         height: 100%;
     }
-    
-    .menu-btn input{
+
+    .menu-btn input {
         all: unset;
     }
 
-    .plus{
+    .plus {
         position: absolute;
         top: 22px;
         left: 8px;
@@ -500,85 +725,134 @@ iframe{
         background-color: #3ce5d0;
     }
 
-    .rot{
+    .rot {
         transform: rotate(90deg);
     }
 
     /* hiding circle on smaller screen size */
-    #moving-circle{
+    #moving-circle {
         display: none;
     }
 
 }
 
-@media screen and (max-width:500px){
+@media (min-width: 993px) and (max-width: 1200px) {
 
-    #hero-main, #offset{
+    /* Styles specific to large devices (desktops) */
+    body {}
+
+    .image-banner-carousel {
+        width: 80%;
+        height: auto;
+        /* Adjust as needed */
+        overflow: hidden;
+        margin-left: 10%;
+    }
+
+    .logo img {
+        width: 60%;
+        height: auto;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 1px, rgb(60, 229, 208) 0px 0px 0px 2px;
+        transition: .3s;
+    }
+
+    .vimeo-hrz {
+        position: relative;
+        width: 100%;
+        height: 594px;
+    }
+}
+
+
+
+
+@media (max-width: 576px) {
+
+    #hero-main,
+    #offset {
         margin: 0;
         padding: 0;
         font-size: 8vw;
     }
 
-    .content{
+    .content {
         padding-top: 5%;
         padding-bottom: 5%;
         grid-template-rows: 0.7fr 1.3fr;
     }
 
-    .header h1{
+    .header h1 {
         font-size: 8vw;
     }
 
-    .previous_work{
+    .previous_work {
         width: 100vw;
         height: 100vh;
         grid-template-rows: 100px 0.8fr 350px;
     }
 
-    .previous_work p{
+    .previous_work p {
         font-size: 3.7vw;
     }
 
     /* hiding circle on smaller screen size */
-    #moving-circle{
+    #moving-circle {
         display: none;
     }
+
+    .image-banner-carousel {
+        width: 100%;
+        height: auto;
+        /* Adjust as needed */
+        overflow: hidden;
+        margin-left: 0%;
+    }
+
 
 }
 
 /* iPhone XR Media Query */
 
-@media screen and (max-width:390px){
+@media screen and (max-width:390px) {
 
-    #hero-main, #offset{
+    #hero-main,
+    #offset {
         margin: 0;
         padding: 0;
         font-size: 10vw;
     }
 
-    .content{
+    .content {
         padding-top: 5%;
         padding-bottom: 5%;
         grid-template-rows: 0.7fr 1fr;
     }
 
-    .previous_work{
+    .previous_work {
         width: 100vw;
         height: 100vh;
         grid-template-rows: 100px 0.7fr 350px;
     }
 
-    .previous_work p{
+    .previous_work p {
         font-size: 3.7vw;
     }
 
-    .image-banner{
+    .image-banner {
         padding-bottom: 10px;
     }
 
     /* hiding circle on smaller screen size */
-    #moving-circle{
+    #moving-circle {
         display: none;
+    }
+
+    .image-banner-carousel {
+        width: 95%;
+        height: auto;
+        /* Adjust as needed */
+        overflow: hidden;
+        margin-left: 2%;
     }
 
 }
